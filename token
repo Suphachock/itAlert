@@ -1,0 +1,8 @@
+4OFdSHaA3ieSDESK1gr8EGUtkhea3vXpoiV45reScwX
+
+
+
+@ECHO OFF
+cd\
+c:\xampp\php\php.exe C:\xampp\htdocs\itAlert\model\line_notify.php
+exit
