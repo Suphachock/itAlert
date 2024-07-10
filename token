@@ -6,3 +6,5 @@
 cd\
 c:\xampp\php\php.exe C:\xampp\htdocs\itAlert\model\line_notify.php
 exit
+
+test

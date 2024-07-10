@@ -51,9 +51,9 @@ $result = mysqli_query($conn, $sql);
                     <td class="text-truncate" style="max-width: 100px;"><?= htmlspecialchars($row['more_detail']) ?></td>
                     <td class="<?= $row['status'] == "off" ? 'text-danger fw-bold' : 'text-success fw-bold' ?>"><?= htmlspecialchars($row['status']) ?></td>
                     <td>
+                        <button class="btn btn-primary" onclick="items_detail('<?= htmlspecialchars($row['id']) ?>')"><i class="fa-solid fa-eye"></i></button>
                         <button class="btn btn-warning" onclick="edit_items('<?= htmlspecialchars($row['id']) ?>')"><i class="fa-solid fa-edit"></i></button>
                         <button class="btn btn-danger" onclick="if(confirm('Are you Sure!!')) { delete_items('<?= htmlspecialchars($row['id']) ?>'); } return false;"><i class="fa-solid fa-trash"></i></button>
-                        <button class="btn btn-primary" onclick="items_detail('<?= htmlspecialchars($row['id']) ?>')"><i class="fa-solid fa-eye"></i></button>
                     </td>
                 </tr>
             <?php $counter++;
